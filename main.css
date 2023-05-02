@@ -1,0 +1,61 @@
+/* Reset do default do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------------------------------------- */
+
+body{
+    background-color: #101010;
+}
+
+.contact{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form{
+    display: inline;
+    margin: 30px;
+}
+
+.campo{
+    padding: 10px;
+    background-color: #2e2f37;
+    border: none;
+    display: block;
+    margin: 8px auto;
+    width: 40%;
+    color: #ffff;
+}
+
+button{
+    background-color: #2e2f37;
+    color: #ecF0f1;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.campobValido{
+    background-color:#68fcfc;
+    color: black;
+    width: 20%;
+    margin: 8px auto;
+    padding: 10px;
+    display: none;
+
+}
+
+form button:hover{
+    background-color: #30353d;
+}
+
+input:focus-visible{
+    outline: 2px solid #75759c;
+    color: #ffff;
+}
