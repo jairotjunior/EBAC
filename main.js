@@ -16,7 +16,7 @@ function adicionaLinhas(){
         
         alert(`Número já está cadastrado para um outro contato`);
 
-    }else{
+    }else{""
         
         contato.push(inputNomeContato.value);
         numTel.push(inputNumContato.value);
