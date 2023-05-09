@@ -56,6 +56,11 @@ form input{
     color: #ffffff;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 label{
     font-size: 24px;
     font-weight: bold;

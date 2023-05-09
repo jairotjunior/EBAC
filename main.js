@@ -8,9 +8,9 @@ function adicionaLinhas(){
     const inputNomeContato = document.getElementById("nome-contato");
     const inputNumContato = document.getElementById("num-contato");
 
-    if (contato.includes(inputNomeContato.value)){
+    if (contato.includes(inputNomeContato.value) && numTel.includes(inputNumContato.value)){
 
-        alert(`Nome já cadastrado`);
+        alert(`Dados já Cadastrado`);
 
     }else if(numTel.includes(inputNumContato.value)){
         

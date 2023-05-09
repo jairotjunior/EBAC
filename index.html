@@ -21,21 +21,21 @@
         </header>
         
         <form id="form-agenda">
-            <label for="">Nome do contato
+            <label for="nome-contato">Nome do contato
                 <input 
                     id="nome-contato" 
-                    type="text" 
+                    type="text"
                     placeholder="Ex.: João da Silva" 
                     required/>
             </label>
 
-            <label for="">Número Contato
-                <input 
-                    id="num-contato" 
-                    type="tel"
-                    placeholder="Insira um Telefone" 
-                    required 
-                    oninvalid="this.setCustomValidity('Digitar somente números')" />
+            <label for="num-contato">Número Contato
+                <input
+                    id="num-contato"
+                    type="number"
+                    placeholder="Insira um Telefone"
+                    required
+                />
             </label>
 
             <button type="submit">Adicionar +</button>
@@ -50,10 +50,7 @@
             </thead>
             <tbody>
             </tbody>
-            <tfoot>
-            </tfoot>
         </table>
-
     </div>
 
     <script src="./main.js"></script>
