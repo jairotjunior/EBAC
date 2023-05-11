@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #d3d3d3;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#tarefa{
+    display: flex;
+}
+
+input{
+    padding: 10px;
+    margin-right: 4px;;
+    width: 240px;
+    border: 1px solid;
+}
+
+input::-webkit-input-placeholder{
+    font-size: 19px;
+    text-align: center;
+}
+
+button{
+    padding: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d3d3d3;
+    border: 1px solid;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+ul{
+    padding: 0 10px 0 20px;
+    margin-top: 30px;
+}
+
+li{
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.riscado{
+    text-decoration: line-through;
+    font-size: 12px
+}
