@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundo{
+    background-color: #3967d6;
+}
+
+.container{
+    max-width: 853px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+}
+
+h1, a{
+    color: white;
+    font-style: italic;
+}
+
+a{
+    font-style: normal;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+li{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section{
+    display: flex;
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.descricao{
+    display: block;
+    margin-left: 25px;
+}
+
+h3{
+    border-bottom: 2px solid #3967d6;
+    color: #3967d6;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.descricao > p{
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#produtos > div{
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+}
+
+.itens img{
+    height: 200px;
+    width: 100%;
+}
+
+h2{
+    /* font-size: 1.1em; */
+    margin: 20px 0 8px 0;
+    font-size: 1rem;
+}
+
+.itens p{
+    font-size: 0.9em;
+}
+
+button{
+    margin-top: 9px;
+    width: 100%;
+    background-color: #3967d6;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px){
+
+    .container{
+        max-width: 85%;
+        flex-direction: column;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    ul{
+        display: block;
+        margin: auto;
+    }
+
+    li{
+        padding-left: 0;
+    }
+
+    #sobre{
+        display: block;
+    }
+
+    #sobre > img{
+        max-width: 100%;
+    }
+
+    .descricao{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #produtos > div{
+        display: block;
+    }
+
+    .itens img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .container{
+        max-width: 85%;
+        flex-direction: column;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    #sobre{
+        display: block;
+        overflow: hidden;
+    }
+
+    #sobre > img{
+        width: 100%;
+    }
+
+    .descricao{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #produtos > div{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .itens img{
+        width: 100%;
+    }
+}
