@@ -1,0 +1,16 @@
+.caixa{
+    background-color: #161a26;
+    padding: 20px;
+    color: #f6fdff;
+}
+
+.btn{
+    background-color: #475270;
+    border: none;
+}
+
+.form-control{
+    background-color: #475270;
+    border: none;
+    color: #f6fdff;
+}
