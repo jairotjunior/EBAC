@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lange Page</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Loja</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#promocao" class="nav-link">
+                            <i class="me-1"></i>
+                            Promoção
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-fade">
+                <div data-bs-interval="2500" class="carousel-item active">
+                    <img class="d-block w-100" src="./img/fachada.png" alt="Fachada de loja">
+                </div>
+                <div data-bs-interval="2500" class="carousel-item">
+                    <img class="d-block w-100" src="./img/Interior.png" alt="Interior da loja">
+                </div>
+            </div>
+        
+            <button id="move" data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button id="move" data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+
+        <section id="promocao" class="pt-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title mb-3 text-center text-decoration-underline">Promoção</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="mb-3 mx-auto">
+                            <div id="carousel-card1"class="carousel slide">
+                                <div  class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/Livro_Aberto.png" alt="Livro aberto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/Livro_Fechado" alt="Livro fechado">
+                                    </div>
+    
+                                    <button id="move" data-bs-target="#carousel-card1" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button id="move" data-bs-target="#carousel-card1" data-bs-slide="next" class="carousel-control-next" type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators mb-0">
+                                        <button type="button" data-bs-target="#carousel-card1" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-card1" data-bs-slide-to="1"></button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <h5 class="text-center mt-3">Livros</h5>
+                            <p class="mb-3">Descrição: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="d-block mb-3 mx-auto">
+                            <div id="carousel-card2"class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/Carro_frente.png" alt="Livro aberto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/Carro_lateral.png" alt="Livro fechado">
+                                    </div>
+    
+                                    <button id="move" data-bs-target="#carousel-card2" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button id="move" data-bs-target="#carousel-card2" data-bs-slide="next" class="carousel-control-next" type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators mb-0">
+                                        <button type="button" data-bs-target="#carousel-card2" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-card2" data-bs-slide-to="1"></button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <h5 class="text-center mt-3">Carrinhos </h5>
+                            <p class="mb-3">Descrição: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="d-block mb-3 mx-auto">
+                            <div id="carousel-card3"class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/Monitor.png" alt="Livro aberto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/PC.png" alt="Livro fechado">
+                                    </div>
+    
+                                    <button id="move" data-bs-target="#carousel-card3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button id="move" data-bs-target="#carousel-card3" data-bs-slide="next" class="carousel-control-next" type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators mb-0">
+                                        <button type="button" data-bs-target="#carousel-card3" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-card3" data-bs-slide-to="1"></button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <h5 class="text-center mt-3">PC </h5>
+                            <p class="mb-3">Descrição: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="d-block mx-auto">
+                            <div id="carousel-card4"class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/Livro_Aberto.png" alt="Livro aberto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/Livro_Fechado.png" alt="Livro fechado">
+                                    </div>
+    
+                                    <button id="move" data-bs-target="#carousel-card4" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button id="move" data-bs-target="#carousel-card4" data-bs-slide="next" class="carousel-control-next" type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators mb-0">
+                                        <button type="button" data-bs-target="#carousel-card4" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-card4" data-bs-slide-to="1"></button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <h5 class="text-center mt-3">Gibis</h5>
+                            <p class="mb-3">Descrição: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="produtos" class="pt-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title mb-3 text-center text-decoration-underline">Produtos</h2>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <aside>
+                            <nav class="nav nav-pills flex-column">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#livros" class="fw-bold text-md-start text-sm-center nav-link active">Livros</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#carrinhos_miniaturas" class="fw-bold text-md-start text-sm-center nav-link">Carrinhos Miniaturas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#monitores" class="fw-bold text-md-start text-sm-center nav-link">Monitores</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-12">
+                        <div class="tab-content mb-3 mx-auto">
+                            <div class="tab-pane active" id="livros">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2 ">
+                                        <div id="carousel-card5"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro_Aberto.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro_Fechado.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card5" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card5" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card5" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card5" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">História</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card6"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro2.jpeg" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro3.jpeg" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card6" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card6" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card6" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card6" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Programação</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card7"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro_Aberto.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro_Fechado.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card7" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card7" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card7" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card7" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Matemática</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card8"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro2.jpeg" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro3.jpeg" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card8" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card8" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card8" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card8" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Português</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card9"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro_Aberto.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro_Fechado.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card9" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card9" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card9" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card9" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Física</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card10"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Livro2.jpeg" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Livro3.jpeg" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card10" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card10" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card10" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card10" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Lógica</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="carrinhos_miniaturas">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card11"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Carro_frente.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Carro_lateral.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card11" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card11" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card11" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card11" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">SUV</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card12"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Carro1.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Carro2.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card12" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card12" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card12" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card12" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Antiguidades</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card13"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Carro_frente.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Carro_lateral.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card13" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card13" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card13" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card13" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Realistas</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card14"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Carro1.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Carro2.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card14" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card14" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card14" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card14" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Tunados</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="monitores">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card15"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Monitor.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Monitor2.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card15" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card15" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card15" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card15" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Full-HD</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card16"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Monitor3.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Monitor4.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card16" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card16" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card16" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card16" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">4K</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                        <div id="carousel-card17"class="carousel slide">
+                                            <div  class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="./img/Monitor5.png" alt="Livro aberto">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="./img/Monitor6.png" alt="Livro fechado">
+                                                </div>
+                
+                                                <button id="move" data-bs-target="#carousel-card17" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+                                                <button id="move" data-bs-target="#carousel-card17" data-bs-slide="next" class="carousel-control-next" type="button">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+                                                <div class="carousel-indicators mb-0">
+                                                    <button type="button" data-bs-target="#carousel-card17" class="active" data-bs-slide-to="0"></button>
+                                                    <button type="button" data-bs-target="#carousel-card17" data-bs-slide-to="1"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mt-2">Jogos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <button class="mb-3 d-block mx-auto fw-bold">Adicionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="fale-conosco" class="pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title mb-3 text-center text-decoration-underline">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-12 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook fw-bold"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1 fw-bold">
+                                    <a href="#">
+                                        <i class="bi bi-instagram fw-bold"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp fw-bold"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>

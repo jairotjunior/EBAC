@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #3b2518;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #3b2518;
+    text-decoration: underline;
+}
+
+#cabecalho .nav .nav-link, .navbar-brand{
+    color:#fff;
+}
+
+.navbar-toggler {
+    background-color: #96491c;
+}
+
+#move:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button, .btn{
+    background-color: #96491c;
+    color: #fff;
+}
+
+.nav .nav-link.active{
+    background-color: #3b2518;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #3b2518;
+}
+
+.fw-bold{
+    color:#3b2518;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
