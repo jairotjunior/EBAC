@@ -1,7 +1,7 @@
 @use 'reset';
 @use 'cores';
 
-@mixin elementoForm(){
+@mixin larguraPadrao(){
     width: 100%;
 }
 
@@ -14,7 +14,7 @@ li {
 }
 
 .container {
-    @include elementoForm();
+    @include larguraPadrao();
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -53,7 +53,7 @@ section {
 }
 
 .products {
-    @include elementoForm();
+    @include larguraPadrao();
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 32.66%);
@@ -62,7 +62,7 @@ section {
 }
 
 .product-item img {
-    @include elementoForm();
+    @include larguraPadrao();
     border-radius: 16px;
 }
 
