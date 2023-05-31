@@ -14,8 +14,8 @@ li {
 }
 
 .container {
-  max-width: 1024px;
   width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -49,12 +49,12 @@ section {
 }
 
 .products {
+  width: 100%;
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
   column-gap: 1%;
   row-gap: 4%;
-  width: 100%;
 }
 
 .product-item img {

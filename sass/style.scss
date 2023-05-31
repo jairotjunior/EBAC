@@ -1,6 +1,10 @@
 @use 'reset';
 @use 'cores';
 
+@mixin elementoForm(){
+    width: 100%;
+}
+
 body {
     background-color: cores.$fundo;
 }
@@ -10,8 +14,8 @@ li {
 }
 
 .container {
+    @include elementoForm();
     max-width: 1024px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -49,16 +53,16 @@ section {
 }
 
 .products {
+    @include elementoForm();
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 32.66%);
     column-gap: 1%;
     row-gap: 4%;
-    width: 100%;
 }
 
 .product-item img {
-    width: 100%;
+    @include elementoForm();
     border-radius: 16px;
 }
 
