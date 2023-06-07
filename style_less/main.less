@@ -1,0 +1,129 @@
+@import "variaveis.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
+
+.larguraMaxima(@valor){
+    max-width: @valor
+}
+
+.largura(@valor) {
+    width: @valor;
+}
+
+.exibir(@modo){
+    display: @modo;
+}
+
+.bordaRedonda(@valor) {
+    border-radius: @valor;
+}
+
+.espacamentoInterno(@valor){
+    padding: @valor;
+}
+
+* {
+    margin: 0;
+    .espacamentoInterno(0);
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: @fundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    .larguraMaxima(1024px);
+    .largura(100%);
+    margin: 0 auto;
+
+    @media @breakpointTablet {
+        .larguraMaxima(80%);
+    }
+}
+
+header {
+    background-color: @fundo_Cabecalho;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+
+        .exibir(flex);
+        justify-content: space-between;
+        align-items: center;
+        .espacamentoInterno(16px 0);
+    }
+}
+
+.menu {
+    .exibir(flex);
+    
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+        
+        a {
+            color: @texto;
+            text-decoration: none;
+        }
+    }
+}
+
+section {
+    .espacamentoInterno(56px 0);
+}
+
+.products {
+    margin-top: 40px;
+    .exibir(grid);
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    .largura(100%);
+    
+    @media @breakpointTablet {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+
+    @media @breakpointMobile {
+        .exibir(block);
+    }
+
+}
+
+.product-item img {
+    .largura(100%);
+    .bordaRedonda(16px);
+    
+}
+
+.product-button {
+    .exibir(block);
+    background-color: @fundo_botton;
+    color: @texto;
+    text-align: center;
+    .espacamentoInterno(8px 0);
+    .bordaRedonda(8px);
+    margin-top: 8px;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: @hover_fundo_botton;
+    }
+}
+
+@media @breakpointMobile {
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
