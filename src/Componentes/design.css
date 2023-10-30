@@ -1,0 +1,77 @@
+.banner{
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.titulo{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calc_imc{
+    display: flex;
+}
+
+.desc_imc{
+    width: 50%;
+    font-size: 14px;
+    background-color: rgba(0, 255, 0, 0.2);
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.desc_imc p{
+    display: block;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.peso_alt{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin-left: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    border-radius: 20px;;
+}
+
+.titulo_calc{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.caixa_imc{
+    display: flex;
+}
+
+.ent{
+    padding: 5px;
+}
+
+.entAlt{
+    margin-top: 20px;
+}
+
+.result_imc{
+    display: inline;
+    margin: 0 auto;
+    width: 100%;
+    align-self: center;
+    justify-items: center;
+}
+
+.result_imc p{
+    margin-bottom: 15px;
+}
+
+.peso_alt button{
+    display: block;
+    margin: 40px auto auto;
+    padding: 5px 10px;
+}
